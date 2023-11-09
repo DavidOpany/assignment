@@ -1,0 +1,44 @@
+def mult (x, y):
+    return (x*y)
+
+def sub (x, y):
+     return x-y
+
+def add (x, y):
+    retutn x+y
+
+def div (x,y):
+    if y !=0:
+        return x/y
+   else:
+       return " null"
+print("select operation:")
+print ("1.mult")
+print ("2.sub")
+print ("3.add")
+print ("4.div")
+
+choice = input(" enter choice (1/2/3/4): ")
+
+num1= float(input "enter the first number")
+numb2= float (input "enter the second number")
+
+if choice == '1' :
+    print(num1, "*", num2, "=", mult(num1, num2))
+
+elif choice == '2' :
+    print(num1, "-", num2, "=", sub(num1, num2))
+
+elif choice == '3' :
+    print(num1, "+", num2, "=", add(num1, num2))
+
+elif choice == '4' :
+    print(num1, "/", num2, "=", div(num1, num2))
+
+else:
+    print("invalid input")
+
+
+
+   
+    
